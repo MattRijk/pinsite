@@ -1,0 +1,7 @@
+Django
+html5lib
+lxml
+requests
+selenium
+urllib3
+beautifulsoup4

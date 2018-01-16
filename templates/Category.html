@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ category.title }}</title>
+</head>
+<body>
+    <h1>Amsterdam In The 1950s</h1>
+    {% for pinImage in category.images.all %}
+        <a href=""><img src="{{ pinImage.image.url }}"  width="600" height="300"></a>
+        <p>{{ pinImage.note }}</p>
+    {% endfor %}
+</body>
+</html>

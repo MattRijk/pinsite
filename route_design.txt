@@ -1,0 +1,14 @@
+image uuid: 4904750045
+
+# home page list
+www.site.com/
+
+# image detail
+www.site.com/image/4904750045
+
+# category list
+www.site.com/category/
+
+# category image detail
+www.site.com/image/4904750045
+
