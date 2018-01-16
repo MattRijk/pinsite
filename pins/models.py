@@ -1,6 +1,6 @@
 from django.db import models
-from django.core.urlresolvers import reverse
 from django.utils import timezone
+from django.urls import reverse
 from django.utils.text import slugify
 
 
@@ -48,8 +48,8 @@ class Category(models.Model):
 
 
 class ImageHasCategory(models.Model):
-    pinImage = models.ForeignKey(PinImage)
-    category = models.ForeignKey(Category)
+    pinImage = models.ForeignKey(PinImage, on_delete=models.CASCADE,)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE,)
 
     class Meta:
         unique_together = ['pinImage', 'category']
